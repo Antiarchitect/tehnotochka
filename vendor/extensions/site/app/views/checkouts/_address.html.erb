@@ -1,0 +1,56 @@
+<fieldset id='shipping-ship_form'>
+  <% checkout_form.fields_for :ship_address do |ship_form| %>
+    <legend><%= t("shipping_address")%></legend>
+    <div class="inner">
+      <p id="slname" class="field">
+        <%= ship_form.label :lastname, t(:last_name) %><br />
+        <%= ship_form.text_field :lastname, :class => 'required' -%><span class="req">*</span>
+      </p>
+      <p id="sfname" class="field">
+        <%= ship_form.label :firstname, t(:first_name) %><br />
+        <%= ship_form.text_field :firstname, :class => 'required' -%><span class="req">*</span>
+      </p>
+      <p id="ssname" class="field">
+        <%= ship_form.label :secondname, t(:second_name) %><br />
+        <%= ship_form.text_field :secondname -%>
+      </p>
+      <p id="scountry" class="field">
+        <%= ship_form.label :country_id, t(:country) %><br />
+        <span id="scountry"><%= @checkout.ship_address.country.name %></span>
+        <%= ship_form.hidden_field :country_id %>
+      </p>
+      <% if Spree::Config[:ship_form_requires_state] %>
+        <p id="sstate"class="field">
+          <%= ship_form.label :state_id, t(:state) %><br />
+          <span id="sstate"><%= @checkout.ship_address.country.states.find_by_id(28).name %></span>
+          <%= ship_form.hidden_field :state_id, :value => "28" -%>
+        </p>
+      <% end %>
+      <p id="scity" class="field">
+        <%= ship_form.label :city, t(:city) %><br />
+        <span id="scity"><%= "Благовещенск" %></span>
+        <%= ship_form.hidden_field :city, :value => "Благовещенск" -%>
+      </p>
+      <%= ship_form.hidden_field :zipcode, :value => "675000" -%>
+      <p id="sship_form" class="field">
+        <%= ship_form.label :address1, t(:street_address) %><br />
+        <%= ship_form.text_field :address1, :class => 'required' -%><span class="req">*</span>
+      </p>
+      <p id="sphone" class="field">
+        <%= ship_form.label :phone, t(:phone) %><br />
+        <%= ship_form.text_field :phone, :class => 'required' -%><span class="req">*</span>
+      </p>
+      <% if Spree::Config[:alternative_shipping_phone] %>
+        <p id="saltphone">
+          <%= ship_form.label :alternative_phone, t(:alternative_phone) %><br />
+          <%= ship_form.text_field :alternative_phone -%>
+        </p>
+      <% end %>
+    </div>
+  <% end %>
+</fieldset>
+
+<hr class="space" />
+<div class="form-buttons">
+  <input type="submit" class="continue button primary" value="<%=t("save_and_continue") %>"/>
+</div>
