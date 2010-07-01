@@ -16,5 +16,5 @@ if Spree::Config.instance
   Spree::Config.set(:smtp_password => ENV['SENDGRID_PASSWORD'])
   Spree::Config.set(:mails_from => 'tehnotochka.heroku.com')
   Spree::Config.set(:order_from => 'orders@tehnotochka.heroku.com')
-  Spree::Config.set(:mail_auth_type => MAIL_AUTH[1])
+  Spree::Config.set(:mail_auth_type => 'plain')
 end
