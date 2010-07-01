@@ -1,0 +1,9 @@
+---
+ru-RU:
+  number:
+    currency:
+      format:
+        unit: "грн."
+  beneficiary_code: "ОКПО"
+  beneficiary_code2: "Не используется"
+  beneficiary_bank_code: "МФО"

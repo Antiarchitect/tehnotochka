@@ -1,0 +1,8 @@
+<% # TODO Refactor: make it shorter (another hook?) and payment_method.class.to_s.demodulize.downcase -> method_payment %>
+<% if !@hide_payment_links and # hide links for invoice
+      !@order_events and # hide links for admin
+      !@order.paid? and # hide links for paid order
+      @order.checkout.complete? and # hide links until order complete
+      current_payment = @order.checkout.payments.first # hide links if no payment %>
+  <%= render "orders/payment_links/#{current_payment.payment_method.class.to_s.demodulize.downcase}", :current_payment => current_payment %>
+<% end %>
