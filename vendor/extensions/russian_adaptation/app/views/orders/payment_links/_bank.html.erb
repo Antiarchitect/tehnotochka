@@ -1,0 +1,12 @@
+<tbody>
+  <tr>
+    <td colspan="4">
+      <hr />
+      <h6>Платежные документы:</h6>
+      <ul>
+        <li><%= link_to(I18n::t("receipt"), receipt_order_url(@order), :target => '_blank') %></li>
+        <li><%= link_to(I18n::t("invoice"), invoice_order_url(@order), :target => '_blank') %></li>
+      </ul>      
+    </td>
+  </tr>
+</tbody>

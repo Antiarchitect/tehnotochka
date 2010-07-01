@@ -1,0 +1,12 @@
+no_shipping:
+  name: "Самовывоз"
+  zone_id: 1
+ups_ground:
+  name: "Почтой (наложенным платежом)"
+  zone_id: 1
+ups_two_day:
+  name: "Почтой (по предоплате)"
+  zone_id: 1
+ups_one_day:
+  name: "Курьером"
+  zone_id: 1

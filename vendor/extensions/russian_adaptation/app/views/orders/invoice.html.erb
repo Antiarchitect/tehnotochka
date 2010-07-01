@@ -1,0 +1,57 @@
+<html>
+<header>
+<style>
+td{font:normal 12px/140% Verdana,Geneva, sans-serif;
+color:#000;
+padding:5px;
+text-align:left;}
+.invoice{border:0px solid #000;
+border-collapse:collapse;
+width:650px;}
+table.index{border:1px solid #8a8a8a;
+border-collapse:collapse;
+width:650px;}
+table.index td{border:1px solid #8a8a8a;
+border-collapse:collapse;}
+td.price, td.qty {text-align:center;}
+td.total {text-align:right;}
+#footer{width:650px; text-align:right;}
+</style>
+</header>
+<body>
+  <h1><%= I18n::t("invoice") %> № <%= @order.number %> от <%= Time.now.strftime("%d.%m.%Y") %></h1>
+  <table cellpadding="3" class="invoice">
+  <tr>
+    <td valign="top" width="200">
+      &nbsp;&nbsp;<b>Поставщик</b>
+    </td>
+    <td>
+      <%= payment_details(@pd) %>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      &nbsp;&nbsp;<b>Получатель</b>
+    </td>
+    <td>
+      <%= payer_name(@order.checkout.bill_address) %><br />
+      <%= payer_address(@order.checkout.bill_address) %><br />
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">&nbsp;&nbsp;<b>Плательщик</b></td>
+    <td>Тот же</td>
+  </tr>
+  </table>
+  <br /><br /><br />
+  <% @hide_payment_links = true; saved_value = Spree::Config[:show_currency_with_kopek]; Spree::Config.set(:show_currency_with_kopek => false) %>
+  <%= render 'shared/order_details';  %>
+  <% @hide_payment_links = false; Spree::Config.set(:show_currency_with_kopek => saved_value); Spree::Config[:show_currency_with_kopek] %>
+  <br /><br /><br /><br /><br /><br /><br />
+  <div id="footer">М.П.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_______________/_____________________/</div>
+  
+  <script language="JavaScript" type="text/JavaScript">
+  //setTimeout('window.print()',1000);
+  </script>
+</body>
+</html>

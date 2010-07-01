@@ -1,0 +1,11 @@
+finance:
+  company_name: "Интернет-магазин Фирма"
+  company_address: ""
+  company_phone: ""
+  show_currency_with_kopek: true
+  show_currency_with_zero_kopek: false
+country:
+  id: "211"
+  name: "Украина"
+  description: "Украина"
+  timezone: "Kyev"

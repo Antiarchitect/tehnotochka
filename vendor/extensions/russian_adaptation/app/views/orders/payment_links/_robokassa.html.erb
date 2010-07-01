@@ -1,0 +1,11 @@
+<tbody>
+  <tr>
+    <td colspan="4">
+      <hr />
+      <h6>Для оплаты заказа выбранным способом нажмите на кнопку:</h6>
+      <div>
+        <%= current_payment.payment_method.provider.payment_button({:invoice => @order.number[1..-1], :summa =>  @order.total},{:shpa => "omed"}) %>
+      </div>
+    </td>
+  </tr>
+</tbody>
