@@ -5,7 +5,7 @@ if Spree::Config.instance
 
   # production global config
   Spree::Config.set(:site_name => 'Техноточка')
-  Spree::Config.set(:site_url => 'tehnotochka.heroku.com')
+  Spree::Config.set(:site_url => 'tehnotochka.ru')
 
   # production mail config
   Spree::Config.set(:enable_mail_delivery => true)
@@ -13,7 +13,7 @@ if Spree::Config.instance
   Spree::Config.set(:mail_domain => ENV['SENDGRID_DOMAIN'])
   Spree::Config.set(:smtp_username => ENV['SENDGRID_USERNAME'])
   Spree::Config.set(:smtp_password => ENV['SENDGRID_PASSWORD'])
-  Spree::Config.set(:mails_from => 'tehnotochka.heroku.com')
-  Spree::Config.set(:order_from => 'orders@tehnotochka.heroku.com')
+  Spree::Config.set(:mails_from => 'tehnotochka.ru')
+  Spree::Config.set(:order_from => 'orders@tehnotochka.ru')
   Spree::Config.set(:mail_auth_type => 'plain')
 end
