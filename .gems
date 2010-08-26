@@ -18,3 +18,4 @@ spree -v 0.11.0
 prawn
 russian
 mysql
+nokogiri
