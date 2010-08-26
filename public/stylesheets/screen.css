@@ -872,13 +872,9 @@ ul.thumbnails li.selected { border-color: #999999; }
   margin: 0 auto;
 }
 #product-description {
-  display: inline;
+  display: block;
   float: left;
-  width: 310px;
-  margin-right: 10px;
-  padding-right: 24px;
-  margin-right: 25px;
-  border-right: 1px solid #eeeeee;
+  width: 940px;
 }
 #cart-form {
   display: inline;
@@ -1192,3 +1188,38 @@ div#checkout #checkout-summary {
   padding: 20px;
   width: 180px;
 }
+
+table.modelProperties {
+  vertical-align:bottom;
+  position: static;
+  float: left;
+  width: 400px;
+  padding-right: 20px;
+}
+
+table.modelProperties {
+  font-size: 13px;
+  border-collapse: separate;
+}
+table.modelProperties tr {
+  height: 15px;
+}
+
+table.modelProperties td {
+  vertical-align: bottom;
+  line-height:1.2em;
+  padding:0 10px 0 0;
+}
+table.modelProperties td.title {
+  padding:0 0 15px 0;
+  margin-top: 28px;
+}
+table.modelProperties td.label {
+  background: url('http://market.yandex.ru/i/dots.gif') repeat-x right bottom
+}
+table.modelProperties span {
+  background-color:white;
+  padding-right:2px
+}
+
+
