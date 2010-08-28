@@ -1211,8 +1211,7 @@ table.modelProperties td {
   padding:0 10px 0 0;
 }
 table.modelProperties td.title {
-  padding:0 0 15px 0;
-  margin-top: 28px;
+  padding: 0 0 15px 0;
 }
 table.modelProperties td.label {
   background: url('http://market.yandex.ru/i/dots.gif') repeat-x right bottom
