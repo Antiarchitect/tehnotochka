@@ -310,6 +310,9 @@ body.two-col #content {
   width: 750px;
 }
 #header {
+  height: 82px;
+  border-bottom: 2px;
+  border-color: #E9E9E9;
   position: relative;
   color: #2e6ab1;
   clear: both;
