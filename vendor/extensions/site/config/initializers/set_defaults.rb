@@ -16,4 +16,7 @@ if Spree::Config.instance
   Spree::Config.set(:mails_from => 'tehnotochka.ru')
   Spree::Config.set(:order_from => 'orders@tehnotochka.ru')
   Spree::Config.set(:mail_auth_type => 'plain')
+
+  #bells and whistles
+  Spree::Config.set(:products_per_page => 12)
 end
