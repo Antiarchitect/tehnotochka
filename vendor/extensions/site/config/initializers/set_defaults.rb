@@ -19,4 +19,5 @@ if Spree::Config.instance
 
   #bells and whistles
   Spree::Config.set(:products_per_page => 12)
+  Spree::Config.set(:logo => '/images/my_logo.png')
 end
