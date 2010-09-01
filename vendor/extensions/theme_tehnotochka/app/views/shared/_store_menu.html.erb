@@ -1,2 +1,9 @@
-<li><%= link_to t("home") , root_path %></li>
-<li class="cart-indicator"><%= link_to_cart %></li>
+<% if store_menu? %>
+  <% unless current_page?(root_path) %>
+    <li><%= link_to t("home"), root_path %></li>
+  <% end %>
+<% end %>
+<%= render 'shared/login_bar' %>
+<% if store_menu? %>
+  <li class="cart-indicator"><%= link_to_cart %></li>
+<% end %>
