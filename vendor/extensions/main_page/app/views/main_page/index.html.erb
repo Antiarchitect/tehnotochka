@@ -1,0 +1,8 @@
+<% content_for :sidebar do %>
+  <% hook :homepage_sidebar_navigation do %>
+    <%= render "shared/taxonomies" %>
+  <% end %>
+<% end %>
+<ul class="taxons-listing">
+  <%= render :partial => 'taxon', :collection => @taxons %>
+</ul>
