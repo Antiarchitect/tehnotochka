@@ -810,9 +810,9 @@ p button img { margin: 0 5px 0 0; }
   border-top: 1px solid #ffffff;
 }
 .product-listing li a.info span { display: block; }
-.product-listing li:hover { border-color: #1b1b1b; }
+.product-listing li:hover { border-color: #ababab; }
 .product-listing li:hover a.info {
-  background: #1b1b1b url(../images/bottom_shine.png) bottom left repeat-x;
+  background: #ababab url(../images/bottom_shine.png) bottom left repeat-x;
   color: #ffffff;
 }
 ul.thumbnails {
