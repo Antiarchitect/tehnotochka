@@ -380,7 +380,12 @@ p img {
   list-style: none;
   margin: 0 0 1.5em -15px;
 }
-.navigation-list li { margin: 0; }
+.navigation-list li {
+  margin: 0;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
 .navigation-list li a {
   cursor: pointer !important;
   text-decoration: none;
@@ -392,7 +397,7 @@ p img {
   white-space: nowrap;
   overflow: hidden;
 }
-.navigation-list li a:hover { background: url(../images/menu-hover.png) right center no-repeat; }
+.navigation-list li a:hover { background: url(../images/menu-hover.png) left center repeat-x; }
 .navigation-list li.current { width: 200px; }
 .navigation-list li.current a {
   width: 180px;
