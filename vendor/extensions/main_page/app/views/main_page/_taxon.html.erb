@@ -1,0 +1,4 @@
+<li id="taxon_<%= taxon.id %>">
+  <%= link_to image_tag(taxon.icon.url(:big)), seo_url(taxon) %>
+  <span><h2><%= link_to taxon.name, seo_url(taxon), :class => 'info'%></h2></span>
+</li>
