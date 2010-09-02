@@ -8,7 +8,7 @@ class Taxon < ActiveRecord::Base
 
   validates_presence_of :name
   has_attached_file :icon,
-                :styles => { :mini => '32x32>', :normal => '128x128>' },
+                :styles => { :mini => '32x32>', :normal => '128x128', :big => '300x300' },
                 :default_style => :mini,
                 :path => "assets/taxons/:id/:style/:basename.:extension",
                 :storage => "s3",
