@@ -670,7 +670,7 @@ button, a.button, input.button {
   -moz-border-radius: 0.3em;
   -webkit-border-radius: 0.3em;
   border-radius: 0.3em;
-  /*background: #efefef url(../images/buttons/bg-button.png) center left repeat-x !important;*/
+  background: #efefef url(../images/primary-button.png) center left repeat-x !important;
   border-style: solid;
   border-width: 1px !important;
   border-color: #dddddd #999999 #999999 #dddddd !important;
@@ -698,15 +698,21 @@ button.primary, a.button.primary, input.button.primary {
   font-weight: bold;
   color: #000000;
 }
-/*button:hover { background-image: url(../images/buttons/bg-button-hover.png) !important; }*/
-a.button:hover { background-image: url(../images/buttons/bg-button-hover.png) !important; }
-input.button:hover { background-image: url(../images/buttons/bg-button-hover.png) !important; }
+button.disabled, a.button.disabled, input.button.disabled {
+  font-weight: bold;
+  color: #999999;
+}
+button:hover, a.button:hover, input.button:hover {
+  background-image: url(../images/primary-button-hover.png) !important;
+}
 button.large, a.button.large, input.button.large {
-  -moz-border-radius: 0.3em;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
   font-size: 1.4em !important;
   line-height: 1.4em;
+  height: 100px;
+  width: 280px;
 }
 button.small, a.button.small, input.button.small {
   -moz-border-radius: 4px;
