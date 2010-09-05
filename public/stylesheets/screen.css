@@ -706,6 +706,7 @@ button.large, a.button.large, input.button.large {
   border-radius: 4px;
   font-size: 1.4em !important;
   line-height: 1.4em;
+  height: 100px;
   width: 280px;
 }
 button.small, a.button.small, input.button.small {
