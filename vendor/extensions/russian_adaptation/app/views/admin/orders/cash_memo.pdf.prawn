@@ -35,7 +35,7 @@ pdf.move_down 30
 # pdf.move_down 5
 pdf.text "От кого: #{RUSSIAN_SETTINGS['finance']['company_name']}", :size => 10
 pdf.move_down 5
-pdf.text "Получатель: #{ship_address.firstname} #{ship_address.lastname}", :size => 10
+pdf.text "Получатель: #{ship_address.lastname} #{ship_address.firstname} #{ship_address.secondname}", :size => 10
 pdf.move_down 15
 
 ###################################
