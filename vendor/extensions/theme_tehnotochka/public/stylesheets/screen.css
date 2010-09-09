@@ -284,11 +284,6 @@ body.two-col #wrapper { background-image: url(../images/wrapper-back-2.png); }
   display: block;
 }
 
-/*.container_bg{
-	width:100%;
-	background:url(../images/new-tile-header.png) top left repeat-x;
-}*/
-
 #sidebar {
   display: inline;
   float: left;
@@ -312,8 +307,8 @@ body.two-col #content {
 #header {
   height: 140px;
   min-height: 140px;
-  background-color: #29264D;
-  border-bottom-color: #494573;
+  background-color: #363266;
+  border-bottom-color: #514c99;
   border-bottom-style: solid;
   border-bottom-width: 3px;
   position: relative;
@@ -488,8 +483,8 @@ ul#nav-bar li.cart-indicator a.full { background-image: url(../images/cart-full_
 
 .main-menu {
   height: 40px;
-  background-color: #29264D;
-  border-color: #494573;
+  background-color: #363266;
+  border-color: #514c99;
   border-style: none solid solid solid;
   border-width: 2px;
   border-bottom-left-radius: 8px;
