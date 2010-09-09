@@ -260,7 +260,7 @@ legend {
 }
 body {
   margin-top: 0px;
-  background: #ffffff url(../images/new-tile-slider.png) top left repeat-x;
+  background: #ffffff;
 }
 div.left {
   float: left;
@@ -284,10 +284,10 @@ body.two-col #wrapper { background-image: url(../images/wrapper-back-2.png); }
   display: block;
 }
 
-.container_bg{
+/*.container_bg{
 	width:100%;
 	background:url(../images/new-tile-header.png) top left repeat-x;
-}
+}*/
 
 #sidebar {
   display: inline;
@@ -310,7 +310,12 @@ body.two-col #content {
   width: 750px;
 }
 #header {
-  height: 142px;
+  height: 140px;
+  min-height: 140px;
+  background-color: #29264D;
+  border-bottom-color: #494573;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
   position: relative;
   color: #2e6ab1;
   clear: both;
@@ -467,9 +472,9 @@ ul#nav-bar li {
   margin-left: 1em;
 }
 
-/*ul#nav-bar li a {
-    font:
-}*/
+ul#nav-bar li a {
+  color: #C9C3E6;
+}
 ul#nav-bar li.cart-indicator a {
   padding-right: 40px;
   background: transparent url(../images/cart-empty_x32.png) center right no-repeat;
@@ -481,28 +486,21 @@ ul#nav-bar li.cart-indicator a.full { background-image: url(../images/cart-full_
   text-align: right;
 }
 
-.menu-substrate {
-  padding: 0 2px 0 2px;
-  height: 42px;
-  background-color: #E9E9E9;
+.main-menu {
+  height: 40px;
+  background-color: #29264D;
+  border-color: #494573;
+  border-style: none solid solid solid;
+  border-width: 2px;
   border-bottom-left-radius: 8px;
   -moz-border-bottom-left-radius: 8px;
   -webkit-border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   -moz-border-bottom-right-radius: 8px;
   -webkit-border-bottom-right-radius: 8px;
+  padding-right: 12px;
 }
-.menu-inner {
-  padding-right: 1em;
-  height: 40px;
-  background: url(../images/back.png) top left repeat-x;
-  border-bottom-left-radius: 6px;
-  -moz-border-bottom-left-radius: 6px;
-  -webkit-border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  -moz-border-bottom-right-radius: 6px;
-  -webkit-border-bottom-right-radius: 6px;
-}
+
 .search {
   float: right;
 }
