@@ -32,8 +32,8 @@
   border-top: 1px solid #ffffff;
 }
 .taxons-listing li a.info span { display: block; }
-.taxons-listing li:hover { border-color: #ababab; }
+.taxons-listing li:hover { border-color: #d1e5a4; }
 .taxons-listing li:hover a.info {
-  background: #ababab url(../images/bottom_shine.png) bottom left repeat-x;
-  color: #ffffff;
+  background: #d1e5a4 url(../images/bottom_shine.png) bottom left repeat-x;
+  color: #333333;
 }
