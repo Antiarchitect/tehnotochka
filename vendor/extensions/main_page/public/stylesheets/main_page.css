@@ -13,7 +13,7 @@
   float: left;
   margin: 10px;
   padding: 10px;
-  border: 1px solid #dddddd;
+  border: 1px solid #DEDEDD;
   position: relative;
 }
 .taxons-listing li a {
@@ -28,12 +28,13 @@
   padding: 5px;
   width: 335px;
   min-height: 60px;
-  background: #ffffff url(../images/shadow_top.png) 0px -35px repeat-x;
-  border-top: 1px solid #ffffff;
+  background: #DEDEDD;
+  border-top: 1px solid #C9C3E6;
 }
 .taxons-listing li a.info span { display: block; }
-.taxons-listing li:hover { border-color: #d1e5a4; }
+.taxons-listing li:hover { border-color: #a4c45b; }
 .taxons-listing li:hover a.info {
-  background: #d1e5a4 url(../images/bottom_shine.png) bottom left repeat-x;
+  background: #bbe068;
+  border-top: 1px solid #a4c45b;
   color: #333333;
 }
