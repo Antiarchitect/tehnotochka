@@ -272,25 +272,30 @@ div.right {
 }
 a { outline: none; }
 #wrapper {
-  padding: 0 16px 0 0;
+  padding: 20px;
+  padding-right: 0;
   position: relative;
-  border-left: solid 2px #C9C3E6;
-  border-right: solid 2px #C9C3E6;
+  border: solid 2px #C9C3E6;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
 }
 
 .container {
   width: 950px;
-  margin: 0 auto;
+  margin: 10px auto;
   overflow: hidden;
   display: block;
 }
 
 #sidebar {
-  opacity:0.9;
-  filter:alpha(opacity=90);
   display: inline;
   float: left;
-  width: 150px;
+  margin-top: -20px;
+  margin-left: -20px;
+  padding: 5px;
+  padding-left: 0;
+  width: 162px;
   border-bottom-right-radius: 8px;
   -moz-border-bottom-right-radius: 8px;
   -webkit-border-bottom-right-radius: 8px;
@@ -301,6 +306,7 @@ a { outline: none; }
   border-bottom: 2px solid #C9C3E6;
 }
 #sidebar h3 { margin-bottom: 0.5em; }
+
 body.one-col #content {
   display: inline;
   float: left;
@@ -310,6 +316,10 @@ body.two-col #content {
   display: inline;
   float: left;
   width: 750px;
+}
+
+#content h1 {
+  margin-left: 7px;
 }
 #header {
   height: 140px;
@@ -404,7 +414,8 @@ p img {
 }
 .navigation-list {
   list-style: none;
-  margin: 0 0 1.5em -15px;
+  margin-left: -5px;
+  /*margin: 0 0 1.5em -15px;*/
 }
 .navigation-list li {
   margin: 0;
@@ -435,7 +446,9 @@ p img {
   text-indent: -5px;
   line-height: 2.2em;
 }
-.breadcrumbs { margin-bottom: 1em; }
+.breadcrumbs {
+  margin-bottom: 1em;
+}
 .breadcrumbs ul {
   list-style-type: none;
   margin: 0px;
@@ -449,8 +462,6 @@ p img {
   margin: 0px;
   padding: 0px;
   display: inline;
-}
-.breadcrumbs ul li {
   line-height: 20px;
   color: #666666;
 }
