@@ -321,6 +321,11 @@ body.two-col #content {
 #content h1, #content h2 {
   margin-left: 7px;
 }
+
+.taxon h2 {
+  margin-bottom: 0;
+}
+
 #header {
   height: 140px;
   min-height: 140px;
@@ -854,6 +859,11 @@ p button img { margin: 0 5px 0 0; }
   border-top: 1px solid #a4c45b;
   color: #333333;
 }
+
+.taxon .product-listing {
+  margin-top: 0;
+}
+
 ul.thumbnails {
   margin: 0;
   padding: 0;
@@ -963,6 +973,7 @@ ul.thumbnails li.selected { border-color: #999999; }
   margin-top: 20px;
   width: 300px;
 }
+
 dl.table-display {
   margin: 0;
   padding: 0;
