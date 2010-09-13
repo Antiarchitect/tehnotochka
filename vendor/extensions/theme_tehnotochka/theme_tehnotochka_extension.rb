@@ -4,7 +4,7 @@
 class ThemeTehnotochkaExtension < Spree::Extension
   version "1.0"
   description "Describe your extension here"
-  url "http://yourwebsite.com/tehnotochka"
+  url "http://tehnotochka.ru"
 
   # Please use tehnotochka/config/routes.rb instead for extension routes.
 
