@@ -821,7 +821,7 @@ p button img { margin: 0 5px 0 0; }
 }
 .product-listing {
   list-style: none;
-  margin: 2em 0px 0px 0px;
+  margin: 0;
   padding: 0px;
 }
 .product-listing li {
@@ -858,10 +858,6 @@ p button img { margin: 0 5px 0 0; }
   background: #bbe068;
   border-top: 1px solid #a4c45b;
   color: #333333;
-}
-
-.taxon .product-listing {
-  margin-top: 0;
 }
 
 ul.thumbnails {
