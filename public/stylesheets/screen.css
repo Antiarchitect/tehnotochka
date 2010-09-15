@@ -284,12 +284,13 @@ a { outline: none; }
 
 #page-top {min-height: 100%; margin-bottom: -50px;}
 * html #page-top {height: 100%;}
-#page-empty {height: 60px; clear: both;}
+#page-empty {height: 50px; clear: both;}
 
 #wrapper {
   padding: 20px;
   padding-right: 0;
   position: relative;
+  margin-top: 10px;
   border: solid 2px #C9C3E6;
   border-radius: 8px;
   -moz-border-radius: 8px;
