@@ -17,6 +17,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font-family: inherit;
   vertical-align: baseline;
 }
+html, body {height: 100%; margin: 0; padding: 0;}
 *:focus { outline: 0; }
 body {
   line-height: 1em;
@@ -280,6 +281,11 @@ div.right {
   width: 49%;
 }
 a { outline: none; }
+
+#page-top {min-height: 100%; margin-bottom: -50px;}
+* html #page-top {height: 100%;}
+#page-empty {height: 60px; clear: both;}
+
 #wrapper {
   padding: 20px;
   padding-right: 0;
@@ -292,7 +298,7 @@ a { outline: none; }
 
 .container {
   width: 950px;
-  margin: 10px auto;
+  margin: 0 auto 10px;
   overflow: hidden;
   display: block;
 }
