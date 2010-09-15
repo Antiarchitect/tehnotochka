@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Droid Serif';
+  src: url('/fonts/droid-serif.eot'); /* IE 5-8 */
+  src: local('☺'),       /* sneakily trick IE */
+    url('/fonts/droid-serif.woff') format('woff'),  /* FF 3.6, Chrome 5, IE9 */
+    url('/fonts/droid-serif.ttf') format('truetype'), /* Opera, Safari */
+    url('/fonts/droid-serif.svg#font') format('svg'); /* iOS */
+}
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
   margin: 0;
   padding: 0;
@@ -56,7 +64,8 @@ hr.space {
 }
 body {
   line-height: 1.5;
-  font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
+  font-family: 'Droid Serif','Helvetica Neue', Arial, Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
   color: #333333;
   font-size: 75%;
 }
@@ -709,7 +718,8 @@ button, a.button, input.button {
   -moz-outline-radius: 0.3em;
   color: #111111;
   display: inline-block;
-  font-family: Helvetica Neue, Helvetica, Arial, Sans-serif;
+  font-family: 'Droid Serif','Helvetica Neue', Arial, Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
   font-size: 1.1em !important;
   font-size-adjust: none;
   font-stretch: normal;
