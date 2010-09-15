@@ -19,6 +19,7 @@
 .taxons-listing li a {
   display: block;
   text-decoration: none;
+  line-height: 60px;
   color: #111111;
 }
 .taxons-listing li a.info {

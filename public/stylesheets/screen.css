@@ -65,7 +65,7 @@ hr.space {
 body {
   line-height: 1.5;
   font-family: 'Droid Serif','Helvetica Neue', Arial, Helvetica, sans-serif;
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizeSpeed;
   color: #333333;
   font-size: 75%;
 }
@@ -719,7 +719,7 @@ button, a.button, input.button {
   color: #111111;
   display: inline-block;
   font-family: 'Droid Serif','Helvetica Neue', Arial, Helvetica, sans-serif;
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizeSpeed;
   font-size: 1.1em !important;
   font-size-adjust: none;
   font-stretch: normal;
