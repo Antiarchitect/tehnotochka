@@ -1,0 +1,1 @@
+require File.dirname(__FILE__) + '/rails_date_helper_override' if defined?(ActionView)
