@@ -45,13 +45,12 @@ end
         <% end %>
         <%= yield %>
       </div>
-      <%#= render :partial => 'shared/footer'%>
+      
     </div>
     <div id="page-empty"></div>
   </div>  
   <div class="main-footer">
-    <%= render :partial => 'shared/main_footer' %>
-    <%= render 'shared/google_analytics' %>
+    <%= render :partial => 'shared/footer'%>
   </div>
 </body>
 </html>
