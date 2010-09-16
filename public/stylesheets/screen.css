@@ -860,6 +860,7 @@ p button img { margin: 0 5px 0 0; }
   color: #111111;
 }
 .product-listing li a.info {
+  padding-top: 15px;
   position: absolute;
   bottom: 0px;
   right: 0px;
@@ -869,7 +870,7 @@ p button img { margin: 0 5px 0 0; }
   background: #DEDEDD;
   border-top: 1px solid #C9C3E6;
 }
-.product-listing li a.info span { display: block; }
+.product-listing li a.info span { display: block; font-size: 16px;}
 .product-listing li:hover { border-color: #a4c45b; }
 .product-listing li:hover a.info {
   background: #bbe068;
