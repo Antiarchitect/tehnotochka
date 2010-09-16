@@ -1,10 +1,5 @@
-<div id="footer">
-  <div class="left">
-    <% hook :footer_left do -%>
-    <% end -%>
-  </div>
-  <div class="right">
-    <%= hook :footer_right %>
-  </div>
-</div>   
+<p>
+  <div style="width: 34%; float: left; text-align: center; margin-left: 33%;">Адрес электронной почты: <%= link_to "tehnotochka@mail.ru", "mailto:tehnotochka@mail.ru" %></div>
+  <div style="width: 31%;float: left; text-align: right; padding-right: 2%;">&copy; 2010 <!--&#151; 2010-->Техноточка</div>
+</p>
 <%= render 'shared/google_analytics' %>
