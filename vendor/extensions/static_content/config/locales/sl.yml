@@ -1,0 +1,22 @@
+---
+sl:
+    pages: Strani
+    ext_static_content_static_pages: Statične strani
+    ext_static_content_static_pages_desc: Uredi statične strani s pomočjo WYSIWYG urejevalnika.
+    ext_static_content_title: Naslov
+    ext_static_content_slug: Slug
+    ext_static_content_body: Vsebina
+    ext_static_content_new_page: Nova stran
+    ext_static_content_editing_page: Uredi stran
+    ext_static_content_foreign_link: Tuja povezava (URL)
+    ext_static_content_show_in_sidebar: Prikaži ob strani
+    ext_static_content_show_in_header: Prikaži v glavi
+    ext_static_content_show_in_footer: Prikaži v nogi
+    ext_static_content_position: Pozicija
+    ext_static_content_visible: Vidna
+    ext_static_content_confirm_delete: Ali ste prepričani ?
+    ext_static_content_link: Povezava
+    ext_static_content_meta_title: Meta Naslov
+    ext_static_content_meta_keywords: Meta Ključne besede
+    ext_static_content_meta_description: Meta Opis
+    ext_static_content_layout: Postavitev strani
