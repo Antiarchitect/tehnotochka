@@ -1,0 +1,5 @@
+h2. Contributors list - Thanks guys!
+
+We have a lot of contributers.. see http://github.com/PeterBerkenbosch/spree-static-content/contributors
+
+Thank you everyone!!
