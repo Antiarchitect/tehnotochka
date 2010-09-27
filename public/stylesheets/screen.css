@@ -540,6 +540,8 @@ ul#nav-bar li.cart-indicator a.full { background-image: url(../images/cart-full_
 }
 
 .main-menu {
+  display: inline-block;
+  float: right;
   height: 40px;
   background-color: #363266;
   border-color: #C9C3E6;
@@ -556,6 +558,34 @@ ul#nav-bar li.cart-indicator a.full { background-image: url(../images/cart-full_
 
 .search {
   float: right;
+  margin-top: 8px;
+}
+
+.information-menu {
+  display: inline-block;
+  float: right;
+  margin-top: 8px;
+  height: 40px;
+  background-color: #363266;
+  border-color: #C9C3E6;
+  border-style: solid solid solid solid;
+  border-width: 2px;
+  border-top-left-radius: 8px;
+  -moz-border-top-left-radius: 8px;
+  -webkit-border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  -moz-border-top-right-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+  padding-right: 12px;
+}
+
+.information-menu ul {
+  margin: 0px;
+  list-style: none;
+}
+
+.dummy-cleaner {
+  clear: both;
 }
 .pagination a.page {
   padding: 0px 5px;

@@ -4,3 +4,4 @@ log/*
 tmp/*
 nbproject/*
 public/assets/*
+.redcar/*
