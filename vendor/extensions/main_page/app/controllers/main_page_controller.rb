@@ -3,6 +3,6 @@ class MainPageController < Spree::BaseController
   helper 'products'
   def index
     taxonomy = Taxonomy.find_by_name('Категории')
-    @taxons = taxonomy.root.children.compact
+    #@taxons = taxonomy.root.children.compact
   end
 end
