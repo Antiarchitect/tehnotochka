@@ -3,10 +3,6 @@ if Spree::Config.instance
   # locale defaults
   Spree::Config.set(:allow_locale_switching => false)
 
-  # production global config
-  Spree::Config.set(:site_name => 'Техноточка')
-  Spree::Config.set(:site_url => 'tehnotochka.ru')
-
   # production mail config
   Spree::Config.set(:enable_mail_delivery => true)
   Spree::Config.set(:mail_host => 'smtp.sendgrid.net')
