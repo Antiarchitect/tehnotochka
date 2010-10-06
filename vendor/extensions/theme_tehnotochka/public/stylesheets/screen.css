@@ -589,6 +589,9 @@ ul#nav-bar li.cart-indicator a.full { background-image: url(../images/cart-full_
   list-style: none;
 }
 
+.pagination {
+  font-size: 16px;
+}
 .pagination a.page {
   padding: 0px 5px;
   margin: 0px 3px;
