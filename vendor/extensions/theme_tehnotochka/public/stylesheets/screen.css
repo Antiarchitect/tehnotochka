@@ -540,7 +540,7 @@ ul#nav-bar li.cart-indicator a.full { background-image: url(../images/cart-full_
 }
 
 .main-menu {
-  display: inline-block;
+  clear: both;
   float: right;
   height: 40px;
   background-color: #363266;
@@ -557,12 +557,13 @@ ul#nav-bar li.cart-indicator a.full { background-image: url(../images/cart-full_
 }
 
 .search {
+  clear: both;
   float: right;
   margin-top: 8px;
 }
 
 .information-menu {
-  display: inline-block;
+  clear: both;
   float: right;
   margin-top: 8px;
   height: 40px;
@@ -584,9 +585,6 @@ ul#nav-bar li.cart-indicator a.full { background-image: url(../images/cart-full_
   list-style: none;
 }
 
-.dummy-cleaner {
-  clear: both;
-}
 .pagination a.page {
   padding: 0px 5px;
   margin: 0px 3px;
