@@ -4,6 +4,6 @@ if Spree::Config.instance
   Spree::Config.set(:allow_locale_switching => false)
 
   #bells and whistles
-  Spree::Config.set(:products_per_page => 12)
+  Spree::Config.set(:products_per_page => 16)
   Spree::Config.set(:logo => '/images/my_logo.png')
 end
