@@ -14,6 +14,6 @@ if Spree::Config.instance
   Spree::Config.set(:mail_auth_type => 'plain')
 
   #bells and whistles
-  Spree::Config.set(:products_per_page => 12)
+  Spree::Config.set(:products_per_page => 16)
   Spree::Config.set(:logo => '/images/my_logo.png')
 end
