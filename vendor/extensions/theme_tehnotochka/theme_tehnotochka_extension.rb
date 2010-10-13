@@ -18,15 +18,13 @@ class ThemeTehnotochkaExtension < Spree::Extension
         :large => '600x600>', :xl => '900x900>' }
     TaxonsHelper.module_eval do
       def taxon_preview(taxon, max=4)
-        products = taxon.products.active.find(:all, :limit => max)
-        if (products.size < max) && Spree::Config[:show_descendents]
+        products = taxon.products.active.all
+        if Spree::Config[:show_descendents]
           taxon.descendents.each do |taxon|
-            to_get = max - products.length
-            products += taxon.products.active.find(:all, :limit => to_get)
-            break if products.size >= max
+            products += taxon.products.active.all
           end
         end
-        products
+        products.sort_by(&:price)[0, max]
       end
 
       def breadcrumbs(taxon, separator="&nbsp;&raquo;&nbsp;")
