@@ -5,7 +5,7 @@
 # ENV['RAILS_ENV'] ||= 'production'
 
 # Specifies gem version of Rails to use when vendor/rails is not present
-SPREE_GEM_VERSION = '0.11.0' unless defined? SPREE_GEM_VERSION
+SPREE_GEM_VERSION = '0.11.1' unless defined? SPREE_GEM_VERSION
 
 # Bootstrap the Rails environment, frameworks, and default configuration
 require File.join(File.dirname(__FILE__), 'boot')
@@ -27,9 +27,9 @@ Spree::Initializer.run do |config|
   # config.gem "aws-s3", :lib => "aws/s3"
 
   config.gem "highline", :version => '1.5.1'
-  config.gem 'authlogic', :version => '2.1.3'
+  config.gem 'authlogic', :version => '>=2.1.3'
   config.gem 'authlogic-oid', :lib => "authlogic_openid", :version => '1.0.4'
-  config.gem "activemerchant", :lib => "active_merchant", :version => '1.5.1'
+  config.gem "activemerchant", :lib => "active_merchant", :version => '1.7.0'
   config.gem 'activerecord-tableless', :lib => 'tableless', :version => '0.1.0'
   config.gem 'less', :version => '1.2.20'
   config.gem 'stringex', :lib => 'stringex', :version => '1.0.3'
@@ -37,7 +37,7 @@ Spree::Initializer.run do |config|
   config.gem 'whenever', :lib => false, :version => '0.3.7'
   config.gem 'searchlogic', :version => '2.3.5'
   config.gem 'will_paginate', :lib => 'will_paginate', :version => '2.3.14'
-  config.gem 'state_machine', :lib => 'state_machine', :version => '0.8.0'
+  config.gem 'state_machine', :lib => 'state_machine', :version => '0.9.2'
   config.gem "faker", :version => '0.3.1'
   config.gem 'paperclip', :version => '>=2.3.1.1'
   config.gem 'ruby-openid', :lib => "openid", :version => '>=2.0.4'
@@ -73,11 +73,11 @@ Spree::Initializer.run do |config|
 
   # Activate observers that should always be running
   # config.active_record.observers = :cacher, :garbage_collector
-  config.active_record.observers = :state_monitor
+  config.active_record.observers = :state_monitor, :model_cache_cleaner
 
   # The internationalization framework can be changed to have another default locale (standard is :en) or more load paths.
   # All files from config/locales/*.rb,yml are added automatically.
-  #config.i18n.load_path << Dir[File.join(RAILS_ROOT, 'my', 'locales', '*.{rb,yml}')]
+  #config.i18n.load_path << Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   config.i18n.default_locale = :'en'
 
 end
